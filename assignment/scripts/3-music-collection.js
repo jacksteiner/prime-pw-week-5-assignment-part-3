@@ -42,3 +42,9 @@ const albumFive = {
     artist: 'Women',
     yearPublished: 2010,
 }
+
+const albumSix = {
+    title: 'RKS',
+    artist: 'Rainbow Kitten Suprise',
+    yearPublished: 2015,
+}
