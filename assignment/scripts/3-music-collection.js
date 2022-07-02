@@ -18,7 +18,7 @@ function addToCollection(title, artist, yearPublished) {
 };
 
 addToCollection('Virga I', 'Eluvium', 2020);
-console.log('Collection', collection);
+console.log('Adding to Collection..', collection);
 
 const albumTwo = {
     title: 'Forever',
@@ -48,3 +48,15 @@ const albumSix = {
     artist: 'Rainbow Kitten Suprise',
     yearPublished: 2015,
 }
+
+addToCollection('Forever', 'Joy Again', 2014);
+
+addToCollection('Dummy','Portishead',1990);
+
+addToCollection('Graduation','Kanye',2007);
+
+addToCollection('Public Strain','Women',2010);
+
+addToCollection('RKS','Rainbow Kitten Suprise',2015);
+
+console.log('Adding to Collection..', collection);
