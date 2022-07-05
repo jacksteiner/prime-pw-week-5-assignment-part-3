@@ -51,27 +51,44 @@ const albumSix = {
 
 addToCollection('Forever', 'Joy Again', 2014);
 
-addToCollection('Dummy','Portishead',1990);
+addToCollection('Forever2', 'Joy Again', 2014);
 
-addToCollection('Graduation','Kanye',2007);
+addToCollection('Dummy', 'Portishead', 1990);
 
-addToCollection('Public Strain','Women',2010);
+addToCollection('Graduation', 'Kanye', 2007);
 
-addToCollection('RKS','Rainbow Kitten Suprise',2015);
+addToCollection('Public Strain', 'Women', 2010);
+
+addToCollection('RKS', 'Rainbow Kitten Suprise', 2015);
 
 console.log('Adding to Collection..', collection);
 
-function showCollection (collectionInput){
+function showCollection(collectionInput) {
     console.log(collectionInput.length);
-    for (let i=0; i<collectionInput.length; i++){
+    for (let i = 0; i < collectionInput.length; i++) {
         let album = collectionInput[i];
-       // console.log('Item' , album);
+        // console.log('Item' , album);
         console.log(album.title + ' by ' + album.artist + ' published in ' + album.yearPublished);
     }
 }
 showCollection(collection);
 
+function findByArtist(artist, collectionInput) {
+    let foundAlbums = [];
+    // loop over all albums, looking for artist
+    for (let i = 0; i < collectionInput.length; i++) {
+    // collectionInput is an array
+    // album is an object
+        let album = collectionInput[i];
+        if (album.artist === artist) {
+    // if a match is found add to found ablum
+            foundAlbums.push(album);
+        }
+    }
+    return foundAlbums;
+}
 
+console.log('Found', findByArtist('Joy Again', collection));
 
 
 // console.log('in the function');
