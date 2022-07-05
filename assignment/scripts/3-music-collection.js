@@ -60,3 +60,16 @@ addToCollection('Public Strain','Women',2010);
 addToCollection('RKS','Rainbow Kitten Suprise',2015);
 
 console.log('Adding to Collection..', collection);
+
+function showCollection ([]){
+    for (let i=0; i<collection.length; i++); 
+}
+    
+
+showCollection(collection);
+
+
+
+
+// console.log('in the function');
+//     console.log(arrayInput(collection.length));
