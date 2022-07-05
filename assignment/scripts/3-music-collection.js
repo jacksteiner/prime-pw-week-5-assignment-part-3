@@ -61,11 +61,14 @@ addToCollection('RKS','Rainbow Kitten Suprise',2015);
 
 console.log('Adding to Collection..', collection);
 
-function showCollection ([]){
-    for (let i=0; i<collection.length; i++); 
+function showCollection (collectionInput){
+    console.log(collectionInput.length);
+    for (let i=0; i<collectionInput.length; i++){
+        let album = collectionInput[i];
+       // console.log('Item' , album);
+        console.log(album.title + ' by ' + album.artist + ' published in ' + album.yearPublished);
+    }
 }
-    
-
 showCollection(collection);
 
 
